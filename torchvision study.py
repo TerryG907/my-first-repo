@@ -1,11 +1,12 @@
 # CNN 图像二分类入门示例 (PyTorch)
 # 目标：输入猫狗图片，输出预测概率
-
 import torch
 import torch.nn as nn
 import torch.optim as optim
 from torchvision import datasets, transforms
 from torch.utils.data import DataLoader
+
+
 
 # --------------------------
 # 1️⃣ 数据预处理
@@ -116,3 +117,6 @@ with torch.no_grad():
     predicted = 1 if output.item() >= 0.5 else 0
 
 print("预测类别:", "狗" if predicted==1 else "猫")
+
+
+Print("Who are you?")
